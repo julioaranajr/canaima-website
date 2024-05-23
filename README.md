@@ -2,7 +2,7 @@
 
 ## Project tasks : (Only using HTML )
 - [x] Create a repo on GitHub and clone it
-- [ ] Create HTML page for registration that redirects you to the login page
+- [x] Create HTML page for registration that redirects you to the login page
 - [ ] Create a Login page 
 - [ ] The login page should redirect you to the Home page
 - [ ] Create the Home page

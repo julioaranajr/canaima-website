@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Canaima website login page."/>
+    <meta name="description" content="The Canaima website login page." />
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
-    
+    <h1>Welcome! to Canaima Login Page</h1>
+    <picture>
+        <source media="(min-width: 650px)" id="gato-grande" srcset="assests/gato-grande.png">
+        <source media="(min-width: 465px)" id="gato-mediano" srcset="assests/gato-mediano.png">
+        <img src="assests/gato-peque.png" alt="Gatito">
+    </picture>
+    <form action="home.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button id="login" type="submit">Login</button><br>
+    </form>
+    <div>
+        <p>Do you need an account? <a href="register.html">Register</a></p>
+    </div>
 </body>
+
 </html>

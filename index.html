@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Canaima website welcome page."/>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            background-color: rgb(157, 172, 240);
-        }
-        p {
-            text-align: center;
-            color: #333;
-        }
-        a {
-            display: block;
-            text-align: center;
-            color: #333;
-            text-decoration: none;
-        }
-        </style>
-<title>Welcome</title>
+    <meta name="description" content="The Canaima website welcome page." />
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
 </head>
-    <title>Welcome to Canaima Website</title>
+<title>Welcome to Canaima Website</title>
 </head>
+
 <body>
     <div>
         <h1>Welcome to Canaima Website</h1>
     </div>
+    <picture>
+        <source media="(min-width: 650px)" id="gato-grande" srcset="assests/gato-grande.png">
+        <source media="(min-width: 465px)" id="gato-mediano" srcset="assests/gato-mediano.png">
+        <img src="assests/gato-peque.png" alt="Gatito">
+    </picture>
     <div>
         <p>Thank you for visiting our website!</p>
-        <p>If you would like to register, please click the link below:</p>
+        <p>Are you tired of being a regular human?</p>
+        <p>Join our exclusive community and experience life from a
+            whole new perspective!</p>
+        <p>Register now and unlock the secrets of the feline world.
+            Meow!</p>
+        <p>If you would like to register, please click the button below:</p>
     </div>
     <div>
-        <a href="register.html"><button>Register</button></a>
+        <a href="register.html"><button id="register1">Register</button></a>
     </div>
 </body>
+
 </html>

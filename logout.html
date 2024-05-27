@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Canaima website logout page."/>
-    <title>Logout</title>
+    <meta name="description" content="The Canaima website About page." />
+    <title>Canaima Website | Logout</title>
 </head>
+
 <body>
-    
+
+    <header id="mainheader">
+        <nav id="mainnavbar">
+            <div class="container">
+                <h1 class="logo"><a href="home.html">Canaima<span>Website</span></a></h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html" class="btn btn">Logout</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="showcase">
+            <div class="container">
+                <h1 class="display-1"><span>Auf</span> <br>Wiedersehen</h1>
+                <p class="large"></p>
+                <p class="large">Goodbye (English), Adiós (Spanish), Au revoir (French), Arrivederci (Italian), Sayonara (Japanese)</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="counter">5</div>
+    <script>
+        setInterval(function () {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("login.html");
+            }
+        }, 1000);
+    </script>
+
+    <footer id="logout-footer">
+        <div>
+            <p style="color: white;">&copy; 2024 Canaima Website. All rights reserved. Designed by Julio Arana Jr.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

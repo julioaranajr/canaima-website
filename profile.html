@@ -4,51 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Canaima website profile page." />
-    <link rel="stylesheet" href="style.css">
-    <title>Profile</title>
-</head>
-<title>Welcome to my Profile</title>
+    <meta name="description" content="The Canaima website About page." />
+    <title>Canaima Website | About</title>
 </head>
 
 <body>
-    <div>
-        <h1>Welcome to Canaima Website</h1>
-    </div>
-    <picture>
-        <source media="(min-width: 650px)" id="gato-grande" srcset="assests/gato-grande.png">
-        <source media="(min-width: 465px)" id="gato-mediano" srcset="assests/gato-mediano.png">
-        <img src="assests/gato-peque.png" alt="Gatito">
-    </picture>
-    <div>
-        <div>
-            <h2>About Me</h2>
-            <p>
-                Hi, my name is Julio Arana, Jr. I am a web developer with a passion for creating
-                beautiful and functional websites. I have experience in HTML, CSS, and JavaScript,
-                and I am constantly learning and improving my skills.
-            </p>
-            <p>
-                In my free time, I enjoy exploring new technologies and experimenting with different
-                design concepts. I believe that a well-designed website can make a huge impact on the
-                user experience and I strive to create websites that are both visually appealing and user-friendly.
-            </p>
-            <p>
-                Feel free to browse through my portfolio and get in touch with me if you have any questions
-                or if you would like to collaborate on a project. I am always open to new opportunities and challenges.
-            </p>
+
+    <header id="bodyheader">
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="home.html">Canaima<span>website</span></a></h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="current" href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html" class="btn btn-outline">Logout</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div>
+                <h1>My profile</h1><br>
+                <h2> Hello world 👋, I'm Julio Arana Jr.</h2><br>
+                <h2>💫 About Me:</h2>
+                <h3>Cloud Systems Developer</h3>
+                <h3>⚡ I’m currently a Student @ DCI - Digital Career Institute ⚡</h3><br>
+                <h1>Overview</h1><br>
+                <h3>👨🏻‍💻 10+ years of experience in IT industry</h3><br>
+                <h3>🎓 Bachelor of Science in Computer Science</h3><br>
+                <h3>🔭 I’m currently working on something cool</h3><br>
+                <h3>🌱 I’m currently learning AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Python, Java,
+                    JavaScript, .Net, Django, Apache, Nginx, MySQL, Postgres, GitHub, Confluence, Jira, Trello,
+                    Anaconda, Apache, Nginx, Amazon DynamoDB, AWS, Azure, Google Cloud</h3><br>
+                <h3>👯 I’m looking to collaborate on open source projects</h3><br>
+                <h3>💬 Ask me about AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Python, Java,
+                    JavaScript, .Net, Django, Apache, Nginx, MySQL, Postgres, GitHub, Confluence, Jira, Trello,
+                    Anaconda, Apache, Nginx, Amazon DynamoDB, AWS, Azure, Google Cloud</h3><br>
+            </div><br>
+            <div>
+                <h1>Certifications:</h1><br>
+            </div><br>
+            <div align="center"><img src=img/aws-certified-saa-120x120.png><img
+                    src=img/aws-certified-developer-associate-120x120.png><img
+                    src=img/aws-certified-cloud-practitioner-120x120.png><img
+                    src=img/well-architected-proficient.png><img src=img/aws-learning-architecting.png><img
+                    src=img/aws-partner-accreditation-technical-120x120.png><img
+                    src=img/aws-partner-cloud-economics-accreditation-120x120.png>
+            </div><br>
+            <div>
+                <p align="center">Connect with me:</p>
+                <p align="center">
+                    <a href="https://twitter.com/julioaranajr" target="blank"><img align="center"
+                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
+                            alt="julioaranajr" height="30" width="40" /></a>
+                    <a href="https://linkedin.com/in/julioarana" target="blank"><img align="center"
+                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+                            alt="julioarana" height="30" width="40" /></a>
+                    <a href="https://instagram.com/julioaranajr" target="blank"><img align="center"
+                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
+                            alt="julioaranajr" height="30" width="40" /></a>
+                </p><br>
+                <div>
+                </div>
+
+    </section>
+
+    <footer id="profile-footer">
+        <div id="container">
+            <div>
+                <p style="color: white;">&copy; 2024 Canaima Website. All rights reserved. Designed by Julio Arana Jr.
+                </p>
+            </div>
         </div>
-    </div>
+    </footer>
+
 </body>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</footer>
+
 </html>

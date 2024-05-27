@@ -4,42 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Home page of Canaima website provide you all what you need to 
-    know to get started with developing websites and applications." />
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
-</head>
-<title>Welcome to Canaima Website</title>
+    <meta name="description" content="The Canaima website register page." />
+    <title>Canaima Website | Home</title>
 </head>
 
 <body>
-    <div>
-        <h1>Welcome to Canaima Website</h1>
-    </div>
-    <picture>
-        <source media="(min-width: 650px)" id="gato-grande" srcset="assests/gato-grande.png">
-        <source media="(min-width: 465px)" id="gato-mediano" srcset="assests/gato-mediano.png">
-        <img src="assests/gato-peque.png" alt="Gatito">
-    </picture>
-    <div>
-        <h2>What is Canaima Website?</h2>
-        <p>Canaima Website is a website that provides you with all the information you need to get
-            started with developing websites and applications. We provide you with tutorials, articles,
-            and resources to help you learn how to develop websites and applications. We also provide you
-            with tools and services to help you build and deploy your websites and applications.
-            Whether you are a beginner or an experienced developer, Canaima Website has something for you.</p>
-    </div>
+
+    <header id="mainheader">
+        <nav id="mainnavbar">
+            <div class="container">
+                <h1 class="logo"><a href="home.html">Canaima<span>Website</span></a></h1>
+                <ul>
+                    <li><a class="current" href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="logout.html" class="btn btn">Logout</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="showcase">
+            <div class="container">
+                <h1 class="display-1"><span>Life</span> <br>in motion</h1>
+                <p class="large">Get started with Canaima Website, simply browse through our reources page to learn more
+                    about the world of development. If you have any questions or feedback, feel free to get in touch
+                    with us. We are always happy to hear from you</p>
+                <div class="showcase-row">
+                    <a href="resources.html" class="btn btn-light">Resources</a>
+                    <a href="contact.html" class="btn btn-outline">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="home-footer">
+        <div>
+            <p>&copy; 2024 Canaima Website. All rights reserved. Designed by Julio Arana Jr.</p>
+        </div>
+    </footer>
+
 </body>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</footer>
 
 </html>

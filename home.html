@@ -4,52 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Canaima website register page." />
+    <meta name="description" content="The Canaima website Home page." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Canaima Website | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <header id="mainheader">
-        <nav id="mainnavbar">
-            <div class="container">
-                <h1 class="logo"><a href="home.html">Canaima<span>Website</span></a></h1>
-                <ul>
-                    <li><a class="current" href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="logout.html" class="btn btn">Logout</a>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="navbar-header">
+                    <img src="img/canaima-logo.png" class="img-fluid" alt="Canaima-Website">
+                </div><br>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="home.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="profile.html" class="nav-link px-2 text-white">Profile</a></li>
+                    <li><a href="resources.html" class="nav-link px-2 text-white">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div id="showcase">
-            <div class="container">
-                <h1 class="display-1"><span>Life</span> <br>in motion</h1>
-                <p class="large">Get started with Canaima Website, simply browse through our reources page to learn more
-                    about the world of development. If you have any questions or feedback, feel free to get in touch
-                    with us. We are always happy to hear from you</p>
-                <div class="showcase-row">
-                    <a href="resources.html" class="btn btn-light">Resources</a>
-                    <a href="contact.html" class="btn btn-outline">Contact</a>
+                <div class="text-end">
+                    <a class="btn btn-outline-light" href="logout.html">Logout</a>
                 </div>
             </div>
         </div>
+    </header><br>
+
+    <section>
+        <div class="container" id="carousel">
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1903.jpg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h2>{DCI-Python-Course}</h2>
+                                <p class="opacity-75">Daily Class Notes and Exercises.</p>
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1902.jpg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>"Keep calm, True success comes with inner peace."</p>
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1904.jpg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1905.jpg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1906.jpeg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1907.jpg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img" width="100%" height="100%" src="img/wp1901.jpg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <div class="container">
+                            <div class="carousel-caption text-end">
+                                <h3>"Quality is more important than quantity..."</h3>
+                                <p>- Steve Jobs</p>
+                                <p><a class="btn btn-sm btn-primary" href="resources.html">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div><br>
+
+        <div class="container">
+            <div class="container marketing">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="fw-normal">Profile</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel.
+                            This is the first column.</p>
+                        <p><a class="btn btn-secondary" href="profile.html">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="fw-normal">Resources</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel.
+                            This is the first column.</p>
+                        <p><a class="btn btn-secondary" href="resources.html">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="fw-normal">About me</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel.
+                            This is the first column.</p>
+                        <p><a class="btn btn-secondary" href="about.html">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="container">
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
+                            class="text-body-secondary">It’ll blow your mind.</span></h2>
+                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some
+                        exciting prose here.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" src="img/x-me-jrad-w.png" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span
+                            class="text-body-secondary">See for yourself.</span></h2>
+                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea
+                        of how this layout would work with some actual real-world content in place.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" src="img/x-me-jrad-z.png" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                            class="text-body-secondary">Checkmate.</span></h2>
+                    <p class="lead">Fotmat ... Lives</p>
+                    <p class="lead">Defragment ... Dreams</p>
+                    <p class="lead">Reinstall ... Hopes</p>
+                    <p class="lead">This is all it take to be,</p>
+                    <p class="lead">The best version of yourself.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" src="img/x-me-jrad-v.png" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+            </div>
+
     </section>
 
-
-
-    <footer id="home-footer">
-        <div>
-            <p>&copy; 2024 Canaima Website. All rights reserved. Designed by Julio Arana Jr.</p>
-        </div>
-    </footer>
-
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Canaima, Inc. by Julio Arana Jr.</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a href="https://github.com/julioaranajr" target="blank"><img
+                            src="img/icons8-github-50.png" alt="twitterx--v1" height="40" width="40" /></a></li>
+                <li class="ms-3"><a href="https://twitter.com/julioaranajr" target="blank"><img
+                            src="img/icons8-twitterx-50.png" alt="twitterx--v1" height="40" width="40" /></a></li>
+                <li class="ms-3"><a href="https://linkedin.com/in/julioarana" target="blank"><img
+                            src="img/icons8-linkedin-50.png" alt="julioarana" height="40" width="40" /></a></li>
+                <li class="ms-3"><a href="https://instagram.com/julioaranajr" target="blank"><img
+                            src="img/icons8-instagram-50.png" alt="julioaranajr" height="40" width="40" /></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -4,86 +4,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Julio Arana, Jr." />
-    <meta name="description" content="The Canaima website About page." />
-    <title>Canaima Website | About</title>
+    <meta name="description" content="The Canaima website Profile page." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Canaima Website | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <header id="bodyheader">
-        <nav id="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="home.html">Canaima<span>website</span></a></h1>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="current" href="profile.html">Profile</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="logout.html" class="btn btn-outline">Logout</a>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <section id="about">
+    <header class="p-3 text-bg-dark">
         <div class="container">
-            <div>
-                <h1>My profile</h1><br>
-                <h2> Hello world 👋, I'm Julio Arana Jr.</h2><br>
-                <h2>💫 About Me:</h2>
-                <h3>Cloud Systems Developer</h3>
-                <h3>⚡ I’m currently a Student @ DCI - Digital Career Institute ⚡</h3><br>
-                <h1>Overview</h1><br>
-                <h3>👨🏻‍💻 10+ years of experience in IT industry</h3><br>
-                <h3>🎓 Bachelor of Science in Computer Science</h3><br>
-                <h3>🔭 I’m currently working on something cool</h3><br>
-                <h3>🌱 I’m currently learning AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Python, Java,
-                    JavaScript, .Net, Django, Apache, Nginx, MySQL, Postgres, GitHub, Confluence, Jira, Trello,
-                    Anaconda, Apache, Nginx, Amazon DynamoDB, AWS, Azure, Google Cloud</h3><br>
-                <h3>👯 I’m looking to collaborate on open source projects</h3><br>
-                <h3>💬 Ask me about AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Python, Java,
-                    JavaScript, .Net, Django, Apache, Nginx, MySQL, Postgres, GitHub, Confluence, Jira, Trello,
-                    Anaconda, Apache, Nginx, Amazon DynamoDB, AWS, Azure, Google Cloud</h3><br>
-            </div><br>
-            <div>
-                <h1>Certifications:</h1><br>
-            </div><br>
-            <div align="center"><img src=img/aws-certified-saa-120x120.png><img
-                    src=img/aws-certified-developer-associate-120x120.png><img
-                    src=img/aws-certified-cloud-practitioner-120x120.png><img
-                    src=img/well-architected-proficient.png><img src=img/aws-learning-architecting.png><img
-                    src=img/aws-partner-accreditation-technical-120x120.png><img
-                    src=img/aws-partner-cloud-economics-accreditation-120x120.png>
-            </div><br>
-            <div>
-                <p align="center">Connect with me:</p>
-                <p align="center">
-                    <a href="https://twitter.com/julioaranajr" target="blank"><img align="center"
-                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
-                            alt="julioaranajr" height="30" width="40" /></a>
-                    <a href="https://linkedin.com/in/julioarana" target="blank"><img align="center"
-                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-                            alt="julioarana" height="30" width="40" /></a>
-                    <a href="https://instagram.com/julioaranajr" target="blank"><img align="center"
-                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
-                            alt="julioaranajr" height="30" width="40" /></a>
-                </p><br>
-                <div>
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="navbar-header">
+                    <img src="img/canaima-logo.png" class="img-fluid" alt="CanaimaWebsite">
+                </div><br>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="home.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="profile.html" class="nav-link px-2 text-secondary">Profile</a></li>
+                    <li><a href="resources.html" class="nav-link px-2 text-white">Resources</a></li>
+                    <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+                    <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+                <div class="text-end">
+                    <a class="btn btn-outline-light" href="logout.html" role="button">Logout</a>
                 </div>
-
-    </section>
-
-    <footer id="profile-footer">
-        <div id="container">
-            <div>
-                <p style="color: white;">&copy; 2024 Canaima Website. All rights reserved. Designed by Julio Arana Jr.
-                </p>
             </div>
         </div>
-    </footer>
+    </header><br>
+
+    <section>
+        <!-- ====== // About Area ====== -->
+            <div class="container">
+                <!-- Section Title -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 ">
+                        <div class="section-title text-center">
+                            <h2>My Profile</h2>
+                        </div>
+                    </div>
+                </div><br>
+                <!-- //Section Title -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-bg" style="background-image:url(img/x-me-jrad-z.png)">
+                            <!-- Social Link -->
+                            <div class="social-aria">
+                                <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <!-- // Social Link -->
+                        </div>
+                    </div><br>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h2>Hello World! I am <span>Julio Arana Jr.</span></h2>
+                            <h4>Cloud Systems Developer</h4>
+                            <p>Motivated and experienced Cloud Engineer with over ten years of experience developing
+                                new
+                                and innovative design processes, helping companies to meet and exceed projected
+                                expectations.
+                            <p>High Technical Analytical and Soft Skills. Ability to work with team&#39;s goals.
+                                Adaptation, mobility and discipline to perform in multicultural environments. </p>
+                            <p>Knowledge and experience in the management and implementation of projects.Full action.
+                                Proactive by nature. High Initiative and motivation. Innovation, creativity and
+                                commitment.</p>
+                            <p>More than 10 years of experience as IT Consultant, Venezuelan Petroleum Companies,
+                                Telecommunications and Medical Software Solutions.</li>
+                            </p><br>
+                            <p>
+                                I&#39;m currently Learning Python @ DCI - Digital Career Institute.
+                            </p><br>
+                            <h5>My Skills</h5>
+
+                            <!-- Skill Area -->
+                            <div id="skills" class="skill-area">
+
+                                <!-- Single skill -->
+                                <div class="single-skill">
+                                    <div class="skillbar" data-percent="90%">
+                                        <div class="skillbar-title"><span>HTML5</span></div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">90%</div>
+                                    </div>
+                                </div>
+                                <!-- //Single skill -->
+
+                                <!-- Single skill -->
+                                <div class="single-skill">
+                                    <div class="skillbar" data-percent="75%">
+                                        <div class="skillbar-title"><span>CSS3</span></div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">75%</div>
+                                    </div>
+                                </div>
+                                <!-- //Single skill -->
+
+                                <!-- Single skill -->
+                                <div class="single-skill">
+                                    <div class="skillbar" data-percent="50%">
+                                        <div class="skillbar-title"><span>JS</span></div>
+                                        <div class="skillbar-bar"></div>
+                                        <div class="skill-bar-percent">50%</div>
+                                    </div>
+                                </div>
+                                <!-- //Single skill -->
+
+                            </div>
+                            <!-- //Skill Area -->
+                        </div>
+                    </div><br>
+                </div><br>
+            </div><br>
+            <!-- ====== // About Area ====== -->
+
+            <!-- ====== Fact Counter Section ====== -->
+            <div class="container"><br>
+                <div class="row">
+                    <!-- Single Fact Counter -->
+                    <div class="col-lg-3 co col-md-6 l-md-6 text-center">
+                        <div class="single-fun-fact">
+                            <h2><span class="counter-value" data-count="08">8</span>+</h2>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <!-- // Single Fact Counter -->
+                    <!-- Single Fact Counter -->
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="single-fun-fact">
+                            <h2><span class="counter-value" data-count="600">660</span>+</h2>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                    <!-- // Single Fact Counter -->
+                    <!-- Single Fact Counter -->
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="single-fun-fact">
+                            <h2><span class="counter-value" data-count="09">9</span>+</h2>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                    <!-- // Single Fact Counter -->
+                    <!-- Single Fact Counter -->
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="single-fun-fact">
+                            <h2><span class="counter-value" data-count="730">730</span>+</h2>
+                            <p>Cups of Coffee</p>
+                        </div>
+                    </div>
+                    <!-- // Single Fact Counter -->
+                </div>
+            </div><br>
+            <!-- ====== //Fact Counter Section ====== -->
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 "><br>
+                <div class="section-title text-center">
+                    <h2>My Certifications</h2>
+                </div>
+            </div>
+            <div align="center"><img src="img/aws-certified-saa-120x120.png"><img
+                    src="img/aws-certified-developer-associate-120x120.png"><img
+                    src="img/aws-certified-cloud-practitioner-120x120.png"><img
+                    src="img/aws-well-architected-proficient-120x120.png"><img
+                    src="img/aws-learning-architecting.png"><img
+                    src="img/aws-partner-accreditation-technical-120x120.png"><img
+                    src="img/aws-partner-cloud-economics-accreditation-120x120.png"><img
+                    src="img/aws-cloud-quest-cloud-practitioner-120x120.png">
+            </div><br>
+            <div class="col-lg-6 "><br>
+                <div class="section-title text-center"><br>
+                    <h2>GitHub Stats:
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p align="center"><img
+                                    src="https://github-readme-streak-stats.herokuapp.com/?user=julioaranajr&amp;theme=dark&amp;hide_border=false"
+                                    alt=""><br /></p>
+                        </div>
+                    </div><br>
+                </div>
+
+            </div>
+    </section>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Canaima, Inc. by Julio Arana
+                    Jr.</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a href="https://github.com/julioaranajr" target="blank"><img
+                            src="img/icons8-github-50.png" alt="twitterx--v1" height="40" width="40" /></a></li>
+                <li class="ms-3"><a href="https://twitter.com/julioaranajr" target="blank"><img
+                            src="img/icons8-twitterx-50.png" alt="twitterx--v1" height="40" width="40" /></a>
+                </li>
+                <li class="ms-3"><a href="https://linkedin.com/in/julioarana" target="blank"><img
+                            src="img/icons8-linkedin-50.png" alt="julioarana" height="40" width="40" /></a></li>
+                <li class="ms-3"><a href="https://instagram.com/julioaranajr" target="blank"><img
+                            src="img/icons8-instagram-50.png" alt="julioaranajr" height="40" width="40" /></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!-- ====== ALL BOOTSTRAP ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- ====== ALL JS ====== -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

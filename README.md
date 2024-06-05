@@ -1,6 +1,6 @@
-# ➤ Canaima-Website
+# Canaima-Website
 
-## ➤ Project tasks : (HTML+CSS+Javascript)
+## Project tasks : (HTML+CSS+Javascript)
 - [x] Create a repo on GitHub and clone it
 - [x] Create HTML page for registration that redirects you to the login page
 - [x] Create a Login page 
